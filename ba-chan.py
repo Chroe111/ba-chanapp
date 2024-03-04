@@ -3,7 +3,7 @@ import json
 import random
 import urllib
 
-with open('Python/ba-chan/dic/word_data.json', mode='r') as f:
+with open('word_data.json', mode='r') as f:
     word_json = json.load(f)
 
 noun_list = word_json['名詞']
