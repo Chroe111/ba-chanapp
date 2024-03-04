@@ -15,7 +15,7 @@ tips = ''
 st.title('エセおばあちゃんの知恵袋')
 st.write('エセおばあちゃんがエセ雑学を披露してくれます。')
 st.write('たまに文法がおかしいですが、おばあちゃんなので許してあげてください。')
-st.write('')
+st.write('↓ボタンを押して生成')
 
 if st.button('教えて、おばあちゃん！'):
     tips = f'{random.choice(noun_list)}を{random.choice(verb_list)}と{random.choice(adj_list)}んじゃよ'
