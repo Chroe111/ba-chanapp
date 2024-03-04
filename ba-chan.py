@@ -21,8 +21,8 @@ if st.button('教えて、おばあちゃん！'):
     tips = f'{random.choice(noun_list)}を{random.choice(verb_list)}と{random.choice(adj_list)}んじゃよ'
     with st.chat_message('おばあちゃん', avatar='👵'):
         st.write(tips)
-    url = 'https://github.com/Chroe111/ba-chanapp'
-    text = tips + '\n\n#エセおばあちゃんの知恵袋\nurl'
+    url = 'https://ba-chanapp.streamlit.app/'
+    text = tips + f'\n\n#エセおばあちゃんの知恵袋\n{url}'
     st.link_button('ツイート', f'https://twitter.com/intent/tweet?text={urllib.parse.quote(text)}')
 else:
     with st.chat_message('おばあちゃん', avatar='👵'):
