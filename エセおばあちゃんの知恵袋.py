@@ -20,7 +20,7 @@ if st.button('教えて、おばあちゃん！'):
     with st.chat_message('おばあちゃん', avatar='👵'):
         st.write(tips)
     url = 'https://ba-chanapp.streamlit.app/'
-    text = f'{tips}\n\n#エセおばあちゃんの知恵袋\n{url}'
+    text = f'👵「{tips}」\n\n#エセおばあちゃんの知恵袋\n{url}'
     st.link_button('ツイート', f'https://twitter.com/intent/tweet?text={urllib.parse.quote(text)}')
 else:
     with st.chat_message('おばあちゃん', avatar='👵'):
